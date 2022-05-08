@@ -1,4 +1,4 @@
-package com.jp_funda.github_heatmap
+package com.jp_funda.github_heatmap.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
-import com.jp_funda.boxiful.views.components.PopupWindowDialog
+import com.jp_funda.github_heatmap.models.GitHubHeatmapLevel
 import com.jp_funda.github_heatmap.theme.Green500
 import kotlin.math.roundToInt
 
@@ -49,7 +49,7 @@ fun CalendarHeatmapCell(
                 )
                 .clickable { isShowDialog.value = true }
         ) {
-            PopupWindowDialog(
+            PopupWindow(
                 isShowDialog = isShowDialog,
                 offset = IntOffset(
                     cellSize.width.toPx().roundToInt(),

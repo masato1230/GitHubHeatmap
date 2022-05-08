@@ -1,4 +1,4 @@
-package com.jp_funda.github_heatmap.util
+package com.jp_funda.github_heatmap.utils
 
 import java.time.LocalDate
 

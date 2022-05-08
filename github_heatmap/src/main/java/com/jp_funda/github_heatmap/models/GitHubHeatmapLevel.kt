@@ -1,4 +1,4 @@
-package com.jp_funda.github_heatmap
+package com.jp_funda.github_heatmap.models
 
 enum class GitHubHeatmapLevel(val backgroundAlpha: Float) {
     Level0(0f),

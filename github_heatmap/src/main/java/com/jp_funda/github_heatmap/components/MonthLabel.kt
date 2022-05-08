@@ -1,4 +1,4 @@
-package com.jp_funda.github_heatmap
+package com.jp_funda.github_heatmap.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.height
