@@ -23,7 +23,7 @@ import com.jp_funda.github_heatmap.theme.Green500
 import kotlin.math.roundToInt
 
 @Composable
-fun CalendarHeatmapCell(
+fun GitHubHeatmapCell(
     cellSize: DpSize,
     cellPadding: Dp,
     roundSize: Dp,

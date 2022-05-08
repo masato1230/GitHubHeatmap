@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
-import com.jp_funda.github_heatmap.components.CalendarHeatmapCell
+import com.jp_funda.github_heatmap.components.GitHubHeatmapCell
 import com.jp_funda.github_heatmap.components.MonthLabel
 import com.jp_funda.github_heatmap.components.WeekDayLabel
 import com.jp_funda.github_heatmap.models.GitHubHeatmapLevel
@@ -28,7 +28,7 @@ import java.time.format.TextStyle
 import java.util.*
 
 @Composable
-fun CalendarHeatmap(
+fun GithubHeatmap(
     modifier: Modifier = Modifier,
     cellLevelMap: Map<LocalDate, GitHubHeatmapLevel>,
     cellPopupTextsMap: Map<LocalDate, List<String>>? = null,
@@ -99,7 +99,7 @@ fun CalendarHeatmap(
                             }
 
                             val cellLevel = cellLevelMap[date]
-                            CalendarHeatmapCell(
+                            GitHubHeatmapCell(
                                 cellSize = cellSize,
                                 cellPadding = cellPadding,
                                 roundSize = roundSize,
