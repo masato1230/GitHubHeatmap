@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
+import com.jp_funda.github_heatmap.GitHubHeatmap
 import com.jp_funda.githubheatmap.ui.theme.GitHubHeatmapTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,11 +26,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-//                    GitHubHeatmap(
-//                        cellLevelMap = viewModel.randomDateLevelMap,
-//                        startDate = viewModel.startDate,
-//                        endDate = viewModel.endDate,
-//                    )
+                    GitHubHeatmap(
+                        cellLevelMap = viewModel.randomDateLevelMap,
+                        startDate = viewModel.startDate,
+                        endDate = viewModel.endDate,
+                    )
                 }
             }
         }
