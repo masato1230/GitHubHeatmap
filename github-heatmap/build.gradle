@@ -40,12 +40,14 @@ dependencies {
 
 afterEvaluate {
     publishing {
-        release(MavenPublication) {
-            from components.release
+        publications {
+            release(MavenPublication) {
+                from components.release
 
-            groupId = 'com.github.masato1230'
-            artifactId = 'github-heatmap'
-            version = '1.0'
+                groupId = 'com.github.masato1230'
+                artifactId = 'github-heatmap-compose'
+                version = '1.0'
+            }
         }
     }
 }
