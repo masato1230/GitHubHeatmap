@@ -28,15 +28,15 @@ import java.time.format.TextStyle
 import java.util.*
 
 @Composable
-fun GithubHeatmap(
+fun GitHubHeatmap(
     modifier: Modifier = Modifier,
     cellLevelMap: Map<LocalDate, GitHubHeatmapLevel>,
     cellPopupTextsMap: Map<LocalDate, List<String>>? = null,
     startDate: LocalDate,
     endDate: LocalDate = LocalDate.now(),
-    cellSize: DpSize,
-    cellPadding: Dp,
-    roundSize: Dp,
+    cellSize: DpSize = DpSize(20.dp, 20.dp),
+    cellPadding: Dp = 2.dp,
+    roundSize: Dp = 5.dp,
     textStyle: TextStyle = TextStyle.SHORT,
     locale: Locale = Locale.getDefault(),
 ) {
