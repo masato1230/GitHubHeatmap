@@ -16,7 +16,7 @@ class MainViewModel @Inject constructor() : ViewModel() {
     private val dateIterator = DateIterator(
         startDate = startDate,
         endDateInclusive = LocalDate.now(),
-        stepDays = 1,
+        stepDays = 2,
     )
 
     val randomDateLevelMap: Map<LocalDate, GitHubHeatmapLevel>
